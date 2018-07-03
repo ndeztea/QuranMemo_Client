@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController,ModalController,PopoverController,ViewController } from 'ionic-angular';
 
 /**
  * Generated class for the DashboardPage page.
@@ -15,11 +15,24 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class DashboardPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  constructor(public navCtrl: NavController, public modalCtrl: ModalController, public popOverCtrl: PopoverController,public viewCtrl: ViewController ) { }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DashboardPage');
+  }
+
+  memozNew(){
+  	let modal = this.modalCtrl.create('MemozNewPage'); 
+  	modal.present()
+  }
+
+  memozList(){
+    let modal = this.modalCtrl.create('MemozListPage'); 
+    modal.present()
+  }
+
+  close() {
+    this.viewCtrl.dismiss();
   }
 
 }

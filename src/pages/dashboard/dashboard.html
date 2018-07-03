@@ -7,17 +7,37 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>dashboard</ion-title>
+    <ion-title>Dashboard</ion-title>
+    <ion-buttons right>
+     <button ion-button icon-only menuToggle start>
+     	<ion-icon name="notifications"></ion-icon>
+        <ion-icon name="menu"></ion-icon>
+     </button>
+    </ion-buttons>
   </ion-navbar>
-
 </ion-header>
 
-<ion-tabs>
-  <ion-tab [root]="tab1Root" [tabTitle]="tab1Title" tabIcon="home"></ion-tab>
-  <ion-tab [root]="tab2Root" [tabTitle]="tab2Title" tabIcon="search"></ion-tab>
-  <ion-tab [root]="tab3Root" [tabTitle]="tab3Title" tabIcon="cog"></ion-tab>
-</ion-tabs>
 
-<ion-content padding>
-<h1>test</h1>
+<ion-content>
+<div  class="dashboard-header">
+	Stats here
+</div>
+<div padding class="dashboard-menu">
+	<span><button ion-button (click)="memozNew()">New</button></span>
+	<span><button ion-button (click)="memozList()">LIst</button></span>
+	<div>Stats</div>
+</div>
+<div class="dashboard-timeline">
+	<ion-segment [(ngModel)]="pet">
+	    <ion-segment-button value="memorizing">
+	      Memorizing
+	    </ion-segment-button>
+	    <ion-segment-button value="memorized">
+	      Memorized
+	    </ion-segment-button>
+	    <ion-segment-button value="correction">
+	      Need Correction
+	    </ion-segment-button>
+	 </ion-segment>
+</div>
 </ion-content>
