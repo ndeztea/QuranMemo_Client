@@ -1,0 +1,467 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"num",
+				"Number"
+			],
+			[
+				"sc",
+				"scroll"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/pages/tabs/tabs.ts",
+			"settings":
+			{
+				"buffer_size": 974,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/pages/tutorial/tutorial.ts",
+			"settings":
+			{
+				"buffer_size": 1972,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/pages/list-master/list-master.ts",
+			"settings":
+			{
+				"buffer_size": 1240,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/pages/dashboard/dashboard.ts",
+			"settings":
+			{
+				"buffer_size": 562,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 179.0,
+		"last_filter": "Package Control: ins",
+		"selected_items":
+		[
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 444.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/happyfresh/Works/App/QuranMemo_2.0",
+		"/Users/happyfresh/Works/App/QuranMemo_2.0/src",
+		"/Users/happyfresh/Works/App/QuranMemo_2.0/src/models",
+		"/Users/happyfresh/Works/App/QuranMemo_2.0/src/pages",
+		"/Users/happyfresh/Works/App/QuranMemo_2.0/src/pages/cards",
+		"/Users/happyfresh/Works/App/QuranMemo_2.0/src/pages/content",
+		"/Users/happyfresh/Works/App/QuranMemo_2.0/src/pages/dashboard",
+		"/Users/happyfresh/Works/App/QuranMemo_2.0/src/pages/list-master",
+		"/Users/happyfresh/Works/App/QuranMemo_2.0/src/pages/login",
+		"/Users/happyfresh/Works/App/QuranMemo_2.0/src/pages/menu",
+		"/Users/happyfresh/Works/App/QuranMemo_2.0/src/pages/settings",
+		"/Users/happyfresh/Works/App/QuranMemo_2.0/src/pages/tabs",
+		"/Users/happyfresh/Works/App/QuranMemo_2.0/src/pages/tutorial",
+		"/Users/happyfresh/Works/App/QuranMemo_2.0/src/pages/welcome",
+		"/Users/happyfresh/Works/App/QuranMemo_2.0/www"
+	],
+	"file_history":
+	[
+		"/Users/happyfresh/Works/App/QuranMemo_2.0/src/pages/dashboard/dashboard.module.ts",
+		"/Users/happyfresh/Works/App/QuranMemo_2.0/src/pages/welcome/welcome.module.ts",
+		"/Users/happyfresh/Works/App/QuranMemo_2.0/src/pages/welcome/welcome.ts",
+		"/Users/happyfresh/Works/App/QuranMemo_2.0/src/pages/tutorial/tutorial.ts",
+		"/Users/happyfresh/Works/App/QuranMemo_2.0/src/pages/dashboard/dashboard.ts",
+		"/Users/happyfresh/Works/App/QuranMemo_2.0/src/pages/dashboard/dashboard.html",
+		"/Users/happyfresh/Works/App/QuranMemo_2.0/src/pages/settings/settings.ts",
+		"/Users/happyfresh/Works/App/QuranMemo_2.0/src/pages/welcome/welcome.html",
+		"/Users/happyfresh/Works/App/QuranMemo_2.0/src/pages/index.ts",
+		"/Users/happyfresh/Works/App/QuranMemo_2.0/src/pages/login/login.html",
+		"/Users/happyfresh/Works/App/QuranMemo_2.0/src/pages/login/login.ts",
+		"/Users/happyfresh/Works/App/QuranMemo_2.0/src/pages/tabs/tabs.html",
+		"/Users/happyfresh/Works/App/QuranMemo_2.0/src/pages/tutorial/tutorial.scss",
+		"/Users/happyfresh/Works/App/QuranMemo_2.0/src/pages/tabs/tabs.ts",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/android/new_user_email_order.feature",
+		"/Users/happyfresh/Works/www/QuranMemo/resources/views/content_donasi.blade.php",
+		"/Users/happyfresh/Works/www/QuranMemo/resources/views/dashboard_index.blade.php",
+		"/Users/happyfresh/Works/www/QuranMemo/config/app.php",
+		"/Users/happyfresh/Works/www/QuranMemo/resources/views/home_index.blade.php",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/support/mappings/element_selectors_ios.yml",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/ios/regressions/your_list.feature",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/ios/regressions/order_edit.feature",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/ios/regressions/payment.feature",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/ios/regressions/persistent_basket.feature",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/step_definitions/ios/order_steps.rb",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/step_definitions/common/high_level_steps.rb",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/step_definitions/android/order_steps.rb",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/ios/registered_user_facebook.feature",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/ios/regressions/change_store.feature",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/ios/regressions/drawer_menu.feature",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/ios/regressions/delivery.feature",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/support/mappings/element_coordinates_ios.yml",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/android/registered_user_email.feature",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/android/regressions/delivery.feature",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/android/regressions/your_list.feature",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/step_definitions/common/generic_navigation_steps.rb",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/ios/regressions/delivery_checker.feature",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/android/registered_user_facebook.feature",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/ios/regressions/best_deals.feature",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/step_definitions/common/wait_steps.rb",
+		"/Users/happyfresh/Downloads/BlackPanther.srt",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/support/appium/appium_configs.yml",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/android/regressions/order_edit.feature",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/ios/new_user_email_order.feature",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/step_definitions/android/order_delivery_steps.rb",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/android/new_user_facebook_order.feature",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/support/appium/appium_config_repository.rb",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/support/environments.yml",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/ios/regressions/category.feature",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/support/environment.rb",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/step_definitions/common/post_order_steps.rb",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/step_definitions/common/order_steps.rb",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/support/mappings/element_selectors_android.yml",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/step_definitions/android/shopping_cart_steps.rb",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/step_definitions/ios/shopping_cart_steps.rb",
+		"/Users/happyfresh/Works/www/AkuIlmuan/routes/api.php",
+		"/Users/happyfresh/Works/www/AkuIlmuan/app/Http/Controllers/ProfileController.php",
+		"/Users/happyfresh/Works/www/AkuIlmuan/routes/web.php",
+		"/Users/happyfresh/Works/www/AkuIlmuan/app/Http/Controllers/HomeController.php",
+		"/Users/happyfresh/Works/www/AkuIlmuan/config/app.php",
+		"/Users/happyfresh/Works/www/AkuIlmuan/resources/views/layouts/master.blade.php",
+		"/Users/happyfresh/Works/www/AkuIlmuan/resources/views/layouts/menu.blade.php",
+		"/Users/happyfresh/Works/www/AkuIlmuan/resources/views/home.blade.php",
+		"/Users/happyfresh/Works/www/AkuIlmuan/.env",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/step_definitions/common/fulfillment_steps.rb",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/support/data-access-objects/snd/shopper.rb",
+		"/Users/happyfresh/Downloads/MIUI/flash_all_except_storage.sh",
+		"/Users/happyfresh/Downloads/MIUI/flash_all_lock.sh",
+		"/Users/happyfresh/Downloads/MIUI/flash_all.sh",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/ios/new_user_facebook_order.feature",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/ios/registered_user_email.feature",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/android/regressions/persistent_basket.feature",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/android/regressions/search_product.feature",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/android/regressions/payment.feature",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/support/env.rb",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/step_definitions/common/smoke_steps.rb",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/support/recorders/order_recorder.rb",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/cucumber.yml",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/android/regressions/voucher.feature",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/support/hooks.rb",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/android/regressions/change_store.feature",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/android/regressions/best_deals.feature",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/step_definitions/android/post_order_steps.rb",
+		"/Users/happyfresh/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/happyfresh/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/support/appium/appium_wait.rb",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/ios/regressions/search_category.feature",
+		"/Users/happyfresh/Works/happy-fresh-acceptance/features/ios/regressions/voucher.feature"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"tabs",
+			"MainPage",
+			"welcome",
+			"WelcomePage",
+			"ViewController"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/pages/tabs/tabs.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 974,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								841,
+								841
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": true,
+								"indentSize": 2,
+								"tabSize": 2
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/pages/tutorial/tutorial.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1972,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1585,
+								1585
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 471.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/pages/list-master/list-master.ts",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1240,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1111,
+								1113
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4,
+								"tabSize": 4
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 171.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/pages/dashboard/dashboard.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 562,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Quranmemo_2.0.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 369.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
