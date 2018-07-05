@@ -8,36 +8,40 @@
 
   <ion-navbar>
     <ion-title>Dashboard</ion-title>
-    <ion-buttons right>
-     <button ion-button icon-only menuToggle start>
-     	<ion-icon name="notifications"></ion-icon>
-        <ion-icon name="menu"></ion-icon>
-     </button>
+    <ion-buttons left>
+	     <button ion-button icon-only menuToggle start>
+	        <ion-icon name="menu"></ion-icon>
+	     </button>
+	 </ion-buttons>
+	 <ion-buttons right>
+	     <button ion-button icon-only (click)="notificationsPage()">
+	     	<ion-icon name="notifications"></ion-icon>
+	     </button>
     </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 
 <ion-content>
-<div  class="dashboard-header">
-	Stats here
-</div>
-<div padding class="dashboard-menu">
-	<span><button ion-button (click)="memozNew()">New</button></span>
-	<span><button ion-button (click)="memozList()">LIst</button></span>
-	<div>Stats</div>
-</div>
-<div class="dashboard-timeline">
-	<ion-segment [(ngModel)]="pet">
-	    <ion-segment-button value="memorizing">
-	      Memorizing
-	    </ion-segment-button>
-	    <ion-segment-button value="memorized">
-	      Memorized
-	    </ion-segment-button>
-	    <ion-segment-button value="correction">
-	      Need Correction
-	    </ion-segment-button>
-	 </ion-segment>
-</div>
+	<div  class="dashboard-header">
+		Stats here he
+	</div>
+	<div padding class="dashboard-menu">
+		<span><button ion-button (click)="memozNew()">New</button></span>
+		<span><button ion-button (click)="memozList()">LIst</button></span>
+		<div>Stats</div>
+	</div>
+	<div class="dashboard-timeline">
+		<ion-segment [(ngModel)]="pet">
+		    <ion-segment-button value="memorizing">
+		      Memorizing
+		    </ion-segment-button>
+		    <ion-segment-button value="memorized">
+		      Memorized
+		    </ion-segment-button>
+		    <ion-segment-button value="correction">
+		      Need Correction
+		    </ion-segment-button>
+		 </ion-segment>
+	</div>
 </ion-content>

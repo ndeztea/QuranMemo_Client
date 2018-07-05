@@ -51,7 +51,7 @@ export class TutorialPage {
   }
 
   startApp() {
-    this.navCtrl.setRoot('LoginPage', {}, {
+    this.navCtrl.setRoot('DashboardPage', {}, {
       animate: true,
       direction: 'forward'
     });
