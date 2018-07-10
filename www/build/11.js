@@ -1,14 +1,14 @@
 webpackJsonp([11],{
 
-/***/ 332:
+/***/ 342:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DashboardPageModule", function() { return DashboardPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PartnersPageModule", function() { return PartnersPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard__ = __webpack_require__(346);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__partners__ = __webpack_require__(364);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,34 +18,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var DashboardPageModule = /** @class */ (function () {
-    function DashboardPageModule() {
+var PartnersPageModule = /** @class */ (function () {
+    function PartnersPageModule() {
     }
-    DashboardPageModule = __decorate([
+    PartnersPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__dashboard__["a" /* DashboardPage */],
+                __WEBPACK_IMPORTED_MODULE_2__partners__["a" /* PartnersPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__dashboard__["a" /* DashboardPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__partners__["a" /* PartnersPage */]),
             ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_2__dashboard__["a" /* DashboardPage */]
-            ]
         })
-    ], DashboardPageModule);
-    return DashboardPageModule;
+    ], PartnersPageModule);
+    return PartnersPageModule;
 }());
 
-//# sourceMappingURL=dashboard.module.js.map
+//# sourceMappingURL=partners.module.js.map
 
 /***/ }),
 
-/***/ 346:
+/***/ 364:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashboardPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PartnersPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(116);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -60,29 +57,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the DashboardPage page.
+ * Generated class for the PartnersPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var DashboardPage = /** @class */ (function () {
-    function DashboardPage(navCtrl, navParams) {
+var PartnersPage = /** @class */ (function () {
+    function PartnersPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-    DashboardPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad DashboardPage');
+    PartnersPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad PartnersPage');
     };
-    DashboardPage = __decorate([
+    PartnersPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-dashboard',template:/*ion-inline-start:"/Users/happyfresh/Works/App/QuranMemo_2.0/src/pages/dashboard/dashboard.html"*/'<!--\n  Generated template for the DashboardPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>dashboard</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-tabs>\n  <ion-tab [root]="tab1Root" [tabTitle]="tab1Title" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" [tabTitle]="tab2Title" tabIcon="search"></ion-tab>\n  <ion-tab [root]="tab3Root" [tabTitle]="tab3Title" tabIcon="cog"></ion-tab>\n</ion-tabs>\n\n<ion-content padding>\n<h1>test</h1>\n</ion-content>\n'/*ion-inline-end:"/Users/happyfresh/Works/App/QuranMemo_2.0/src/pages/dashboard/dashboard.html"*/,
+            selector: 'page-partners',template:/*ion-inline-start:"/Users/happyfresh/Works/App/QuranMemo_Client/src/pages/partners/partners.html"*/'<!--\n  Generated template for the PartnersPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Partners</ion-title>\n    <ion-buttons left>\n	     <button ion-button icon-only menuToggle start>\n	        <ion-icon name="menu"></ion-icon>\n	     </button>\n	 </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <h2>Rumah Tahfidz Amanah Quran</h2> <br/>\n    <img src="https://www.quranmemo.com/public/assets/images/aqur.png" style="width: 200px"/>\n  \n  <h2>Pasantren UBK Plus</h2><br/>\n    <img src="https://www.quranmemo.com/public/assets/images/ubk.png" style="width: 300px"/>\n  \n  <h2>UBK Plus adalah pesantren dengan 4 program utama yaitu</h2><br/>\n  (1) Tahfizhul Quran Linear,<br/>\n\n  (2) Tahfizh Tematik/Quran Character Building,<br/>\n\n  (3) Informasi Teknologi, dan<br/>\n\n  (4) Kemandirian.<br/>\n  <p>Insya Allah UBK Plus ingin mencetak penghafal Al-Quran 30 juz mutqin yang menguasai IT untuk bisnis dan dakwah guna mencapai kemandirian finansial dan pemanfaatan waktu yang lebih maksimal untuk aktivitas dakwah. semoga Allah azza wa jalla memudahkan</p>\n</ion-content>\n'/*ion-inline-end:"/Users/happyfresh/Works/App/QuranMemo_Client/src/pages/partners/partners.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
-    ], DashboardPage);
-    return DashboardPage;
+    ], PartnersPage);
+    return PartnersPage;
 }());
 
-//# sourceMappingURL=dashboard.js.map
+//# sourceMappingURL=partners.js.map
 
 /***/ })
 

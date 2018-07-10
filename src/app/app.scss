@@ -14,3 +14,63 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+button{
+	border-radius: 5px !important;
+}
+.header-bg ion-avatar img {
+    height: 150px;
+    border-radius: 78px;
+    text-align: center;
+    border: 1px solid #65bcb4;
+ }
+.header-bg ion-avatar{
+	padding-left: 25%;
+}
+.bar-button-primary-md, .bar-button-clear-md-primary, .bar-button-md-primary{
+	color:#FFF;
+}
+.bar-button-primary-md, .bar-button-clear-md-primary, .bar-button-md-primary:hover{
+	color:#FFF;
+}
+.button-clear-md,.label-md {
+	color:#FFF;
+}
+.toolbar-background{
+	background-color: #055f57
+}
+.bar-button-default-md{
+	color: #e2e2e2
+}
+.toolbar-title-md,.bar-button-default-md:hover{
+	color: #FFFFFF
+}
+
+input.searchbar-input {
+    background-color: #259e8d !important;
+    box-shadow: none !important;
+    border-bottom: 1px dashed #088d81;
+}
+
+header.profile{
+	height: 220px;
+	background: url("../assets/img/bg.jpg") center;
+	border-bottom: 2px solid #2a2b2b;
+	text-align: center;
+}
+.header-bg{
+	height: 220px;
+	background-color: rgba(0, 153, 140, 0.9);
+	padding: 10px;
+}
+.menu{
+	background-color: rgba(0, 153, 140, 0.9);
+}
+.item-md{
+	background-color: #24a296
+}
+.list-md .item-block .item-inner{
+	border-bottom: none !important;
+}
+.label-md .icon {
+	padding-right: 10px;
+}

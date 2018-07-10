@@ -1,7 +1,14 @@
 page-tutorial {
   .toolbar-background {
-    background: transparent;
     border-color: transparent;
+  }
+
+  .scroll-content{
+    background: url("../assets/img/bg.jpg") center;
+  }
+
+  .toolbar{
+    background: #055f57;
   }
 
   .slide-zoom {
@@ -26,7 +33,7 @@ page-tutorial {
     padding: 0 40px;
     font-size: 14px;
     line-height: 1.5;
-    color: #60646B;
+    color: #FFF;
 
     b {
       color: #000000;
@@ -35,5 +42,8 @@ page-tutorial {
 
 }
 .swiper-slide,.swiper-slide-active{
-  background: red;
+  background: rgba(0, 153, 140, 0.9);
+}
+.slide-zoom{
+  color: #FFF;
 }

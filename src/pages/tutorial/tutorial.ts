@@ -32,18 +32,23 @@ export class TutorialPage {
         console.log('Loaded values', values);
         this.slides = [
           {
-            title: values.TUTORIAL_SLIDE1_TITLE,
-            description: values.TUTORIAL_SLIDE1_DESCRIPTION,
+            title: "Start Memorizing",
+            description: "Set your memorizing target, pick the easy ayah.",
             image: 'assets/img/ica-slidebox-img-1.png',
           },
           {
-            title: values.TUTORIAL_SLIDE2_TITLE,
-            description: values.TUTORIAL_SLIDE2_DESCRIPTION,
+            title: "Follow the rule",
+            description: "Follow QuranMemo memorizing method. Repeat read and lister Qur'an",
             image: 'assets/img/ica-slidebox-img-2.png',
           },
           {
-            title: values.TUTORIAL_SLIDE3_TITLE,
-            description: values.TUTORIAL_SLIDE3_DESCRIPTION,
+            title: "Listen and Correct it",
+            description: "Record your target, and correct it by yourself and community.",
+            image: 'assets/img/ica-slidebox-img-3.png',
+          },
+          {
+            title: "Don't forget to say Do'a",
+            description: "Always say 'BISMILLAH' before you start",
             image: 'assets/img/ica-slidebox-img-3.png',
           }
         ];

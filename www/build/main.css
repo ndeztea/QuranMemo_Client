@@ -25678,52 +25678,91 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
-page-item-create .profile-image-wrapper {
+button {
+  border-radius: 5px !important;
+}
+
+.header-bg ion-avatar img {
+  height: 150px;
+  border-radius: 78px;
   text-align: center;
-  margin: 20px 0;
+  border: 1px solid #65bcb4;
 }
 
-page-item-create .profile-image-wrapper .profile-image {
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.header-bg ion-avatar {
+  padding-left: 25%;
 }
 
-page-item-create .profile-image-wrapper .profile-image-placeholder {
-  display: inline-block;
-  background-color: #eee;
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-  font-size: 12px;
+.bar-button-primary-md, .bar-button-clear-md-primary, .bar-button-md-primary {
+  color: #FFF;
 }
 
-page-item-create .profile-image-wrapper .profile-image-placeholder ion-icon {
-  font-size: 44px;
-  margin-bottom: -10px;
-  margin-top: 10px;
+.bar-button-primary-md, .bar-button-clear-md-primary, .bar-button-md-primary:hover {
+  color: #FFF;
 }
 
-page-item-detail .item-profile {
-  width: 100%;
-  background-position: center center;
-  background-size: cover;
-  height: 250px;
+.button-clear-md, .label-md {
+  color: #FFF;
 }
 
-page-item-detail .item-detail {
-  width: 100%;
-  background: white;
-  position: absolute;
+.toolbar-background {
+  background-color: #055f57;
+}
+
+.bar-button-default-md {
+  color: #e2e2e2;
+}
+
+.toolbar-title-md, .bar-button-default-md:hover {
+  color: #FFFFFF;
+}
+
+input.searchbar-input {
+  background-color: #259e8d !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border-bottom: 1px dashed #088d81;
+}
+
+header.profile {
+  height: 220px;
+  background: url("../assets/img/bg.jpg") center;
+  border-bottom: 2px solid #2a2b2b;
+  text-align: center;
+}
+
+.header-bg {
+  height: 220px;
+  background-color: rgba(0, 153, 140, 0.9);
+  padding: 10px;
+}
+
+.menu {
+  background-color: rgba(0, 153, 140, 0.9);
+}
+
+.item-md {
+  background-color: #24a296;
+}
+
+.list-md .item-block .item-inner {
+  border-bottom: none !important;
+}
+
+.label-md .icon {
+  padding-right: 10px;
 }
 
 page-tutorial .toolbar-background {
-  background: transparent;
   border-color: transparent;
+}
+
+page-tutorial .scroll-content {
+  background: url("../assets/img/bg.jpg") center;
+}
+
+page-tutorial .toolbar {
+  background: #055f57;
 }
 
 page-tutorial .slide-zoom {
@@ -25748,7 +25787,7 @@ page-tutorial p {
   padding: 0 40px;
   font-size: 14px;
   line-height: 1.5;
-  color: #60646B;
+  color: #FFF;
 }
 
 page-tutorial p b {
@@ -25756,7 +25795,11 @@ page-tutorial p b {
 }
 
 .swiper-slide, .swiper-slide-active {
-  background: red;
+  background: rgba(0, 153, 140, 0.9);
+}
+
+.slide-zoom {
+  color: #FFF;
 }
 
 page-welcome .splash-bg {

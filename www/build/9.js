@@ -1,15 +1,14 @@
 webpackJsonp([9],{
 
-/***/ 333:
+/***/ 344:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ItemDetailPageModule", function() { return ItemDetailPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QuranJuzPageModule", function() { return QuranJuzPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__item_detail__ = __webpack_require__(347);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__quran_juz__ = __webpack_require__(366);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -19,39 +18,33 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
-var ItemDetailPageModule = /** @class */ (function () {
-    function ItemDetailPageModule() {
+var QuranJuzPageModule = /** @class */ (function () {
+    function QuranJuzPageModule() {
     }
-    ItemDetailPageModule = __decorate([
+    QuranJuzPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__item_detail__["a" /* ItemDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_2__quran_juz__["a" /* QuranJuzPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__item_detail__["a" /* ItemDetailPage */]),
-                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__quran_juz__["a" /* QuranJuzPage */]),
             ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_3__item_detail__["a" /* ItemDetailPage */]
-            ]
         })
-    ], ItemDetailPageModule);
-    return ItemDetailPageModule;
+    ], QuranJuzPageModule);
+    return QuranJuzPageModule;
 }());
 
-//# sourceMappingURL=item-detail.module.js.map
+//# sourceMappingURL=quran-juz.module.js.map
 
 /***/ }),
 
-/***/ 347:
+/***/ 366:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItemDetailPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return QuranJuzPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers__ = __webpack_require__(118);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -63,22 +56,34 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-
-var ItemDetailPage = /** @class */ (function () {
-    function ItemDetailPage(navCtrl, navParams, items) {
+/**
+ * Generated class for the QuranJuzPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var QuranJuzPage = /** @class */ (function () {
+    function QuranJuzPage(navCtrl, navParams, viewCtrl) {
         this.navCtrl = navCtrl;
-        this.item = navParams.get('item') || items.defaultItem;
+        this.navParams = navParams;
+        this.viewCtrl = viewCtrl;
     }
-    ItemDetailPage = __decorate([
+    QuranJuzPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad QuranJuzPage');
+    };
+    QuranJuzPage.prototype.close = function () {
+        this.viewCtrl.dismiss();
+    };
+    QuranJuzPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-item-detail',template:/*ion-inline-start:"/Users/happyfresh/Works/App/QuranMemo_2.0/src/pages/item-detail/item-detail.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>{{ item.name }}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n  <div class="item-profile" text-center #profilePic [style.background-image]="\'url(\' + item.profilePic + \')\'">\n  </div>\n\n  <div class="item-detail" padding>\n    <h2>{{item.name}}</h2>\n    <p>{{item.about}}</p>\n  </div>\n</ion-content>'/*ion-inline-end:"/Users/happyfresh/Works/App/QuranMemo_2.0/src/pages/item-detail/item-detail.html"*/
+            selector: 'page-quran-juz',template:/*ion-inline-start:"/Users/happyfresh/Works/App/QuranMemo_Client/src/pages/quran-juz/quran-juz.html"*/'<!--\n  Generated template for the QuranJuzPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Juz</ion-title>\n    <ion-buttons right>\n	    <button  ion-button icon-only  (click)="close()">\n	    	<ion-icon name="close"></ion-icon>\n	    </button>\n	  </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/happyfresh/Works/App/QuranMemo_Client/src/pages/quran-juz/quran-juz.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers__["b" /* Items */]])
-    ], ItemDetailPage);
-    return ItemDetailPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */]])
+    ], QuranJuzPage);
+    return QuranJuzPage;
 }());
 
-//# sourceMappingURL=item-detail.js.map
+//# sourceMappingURL=quran-juz.js.map
 
 /***/ })
 

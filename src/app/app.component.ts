@@ -9,12 +9,22 @@ import { Settings } from '../providers';
 
 @Component({
   template: `<ion-menu [content]="content" type="push">
-    <ion-header>
+    <!--ion-header>
       <ion-toolbar>
         <ion-title>Menu</ion-title>
       </ion-toolbar>
-    </ion-header>
-    <ion-content>
+    </ion-header-->
+
+    <ion-content class="menu">
+      <header class="profile">
+        <div class="header-bg">
+           <ion-avatar item-start>
+            <img src="assets/img/speakers/duck.jpg">
+            </ion-avatar>
+          <button ion-button color="secondary">Login</button>
+          <button ion-button color="danger">Signup</button>
+        </div>
+      </header>
       <ion-searchbar placeholder="Search Ayah" animated="true"></ion-searchbar>
       <ion-list>
         <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
