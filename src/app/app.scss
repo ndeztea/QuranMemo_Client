@@ -14,8 +14,14 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
-button{
+header button{
 	border-radius: 5px !important;
+}
+.content-body{
+	background-color: #e8e4e0 !important;
+}
+.content-body .scroll-content{
+	padding: 5px;
 }
 .header-bg ion-avatar img {
     height: 150px;
@@ -24,7 +30,7 @@ button{
     border: 1px solid #65bcb4;
  }
 .header-bg ion-avatar{
-	padding-left: 25%;
+	padding-left: 23%;
 }
 .bar-button-primary-md, .bar-button-clear-md-primary, .bar-button-md-primary{
 	color:#FFF;
