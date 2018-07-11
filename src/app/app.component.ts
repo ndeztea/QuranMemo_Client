@@ -21,8 +21,8 @@ import { Settings } from '../providers';
            <ion-avatar item-start>
             <img src="assets/img/speakers/duck.jpg">
             </ion-avatar>
-          <button ion-button color="secondary">Login</button>
-          <button ion-button color="danger">Signup</button>
+          <button ion-button  (click)="openNav('LoginPage')" menuClose color="secondary">Login</button>
+          <button ion-button (click)="openNav('SignupPage')" menuClose color="danger">Signup</button>
         </div>
       </header>
       <ion-searchbar placeholder="Search Ayah" animated="true"></ion-searchbar>
@@ -40,6 +40,7 @@ import { Settings } from '../providers';
 export class MyApp {
   rootPage = FirstRunPage;
 
+
   @ViewChild(Nav) nav: Nav;
 
   pages: any[] = [
@@ -52,6 +53,9 @@ export class MyApp {
     { title: 'Partners', component: 'PartnersPage', icon:'contact' }
   ]
 
+  params: Object;
+  pushPage: any;
+  
   constructor(private translate: TranslateService, platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
@@ -93,4 +97,9 @@ export class MyApp {
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
   }
+
+  openNav(page){
+    this.nav.push(page);
+  }
+
 }
