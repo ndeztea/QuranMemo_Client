@@ -1,5 +1,12 @@
 page-quran {
-	.mushaf{
-		margin: 0px;
-	}
+	
+	@include ltr() {
+        // Custom ltr style goes here
+        float: left;
+    }
+
+    @include rtl() {
+        // Custom rtl style goes here
+        float: right;
+    }
 }

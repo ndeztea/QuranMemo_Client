@@ -14,8 +14,40 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+$app-direction: multi;
+@font-face {
+  font-family: 'me_quran';
+  src: url("../assets/fonts/me_quran.ttf"); 
+}
+@font-face {
+  font-family: 'arabic_onenight';
+  src: url("../assets/fonts/XXII ARABIAN-ONENIGHTSTAND.ttf"); 
+}
+@font-face {
+  font-family: 'arabic_syawal';
+  src: url("../assets/fonts/Alghorie Syawal.ttf"); 
+}
+
+.mushaf{
+	margin: 0px 0px 10px 0px;
+	background-color: #fffbf5;
+}
+
 header button{
 	border-radius: 5px !important;
+}
+.mushaf .ayat_arabic{
+	font-family: "me_quran";
+	font-size: 17pt;
+	padding-bottom: 14px;
+}
+.mushaf .ayat_number{
+	content: "10 )";
+    position: absolute;
+    font-size: 20px;
+    margin: -10px;
+    color: #d8c69c;
+    font-family: "arabic_syawal"
 }
 .content-body{
 	background-color: #e8e4e0 !important;
