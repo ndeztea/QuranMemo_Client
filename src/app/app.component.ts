@@ -55,6 +55,7 @@ export class MyApp {
 
   params: Object;
   pushPage: any;
+  apiHost : 'http://localhost:8888/QuranMemo/'
   
   constructor(private translate: TranslateService, platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {
     platform.ready().then(() => {

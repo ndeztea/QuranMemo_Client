@@ -8,6 +8,7 @@ import { QuranPage } from './quran';
   ],
   imports: [
     IonicPageModule.forChild(QuranPage),
-  ],
+  ]
+
 })
 export class QuranPageModule {}

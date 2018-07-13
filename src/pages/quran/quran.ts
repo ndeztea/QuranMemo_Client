@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ModalController,PopoverController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController,PopoverController} from 'ionic-angular';
+import { RestapiServiceProvider } from '../../providers/restapi-service/restapi-service';
 
 /**
  * Generated class for the QuranPage page.
@@ -15,7 +16,8 @@ import { IonicPage, NavController, NavParams, ModalController,PopoverController 
 })
 export class QuranPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl:ModalController, public popOverCtrl:PopoverController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl:ModalController, public popOverCtrl:PopoverController, public restapiService:RestapiServiceProvider) {
+    
   }
 
   ionViewDidLoad() {
