@@ -9,9 +9,21 @@ import { Injectable } from '@angular/core';
 */
 @Injectable()
 export class RestapiServiceProvider {
+	apiURL: String = 'http://localhost:8888/QuranMemo/public'
 
-  constructor(public http: HttpClient) {
-    console.log('Hello RestapiServiceProvider Provider');
-  }
+	constructor(public http: HttpClient) {
+		console.log('Hello RestapiServiceProvider Provider');
+	}
+
+	getAyats(page: number){
+		console.log(this.apiURL+'/mushaf/page/'+page+'?restAPI=JSON');
+		return new Promise(resolve => {
+		    this.http.get(this.apiURL+'/mushaf/page/'+page+'?restAPI=JSON').subscribe(data => {
+		      resolve(data);
+		    }, err => {
+		      console.log(err);
+		    });
+		});
+	}
 
 }

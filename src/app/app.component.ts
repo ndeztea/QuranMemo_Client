@@ -21,6 +21,7 @@ import { Settings } from '../providers';
            <ion-avatar item-start>
             <img src="assets/img/speakers/duck.jpg">
             </ion-avatar>
+            <h2>Asep Koswara</h2>
           <button ion-button  (click)="openNav('LoginPage')" menuClose color="secondary">Login</button>
           <button ion-button (click)="openNav('SignupPage')" menuClose color="danger">Signup</button>
         </div>

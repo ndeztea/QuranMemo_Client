@@ -18,14 +18,23 @@
 
 
 <ion-content class="content-body">
-  <ion-card class="mushaf" style="content: ' - Remember this'">
-    <ion-card-content>
-      <div class="ayat_number">1</div>
+  <div class="paging no-margin">
+    <button ion-button round>
+      <ion-icon name="ios-arrow-dropleft" (click)="goToPage(prevPage)"></ion-icon>
+    </button>
+    <button ion-button round>
+      <ion-icon name="ios-arrow-dropright" (click)="goToPage(nextPage)"></ion-icon>
+    </button>
+</div>
+
+  <ion-card class="mushaf" *ngFor="let ayat of ayats">
+    <ion-card-content >
+      <div class="ayat_number">{{ayat.ayat}}</div>
       <div class="ayat_arabic" dir="rtl">
-        ﻿بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
+        ﻿{{ayat.text}}
       </div>
        <div class="ayat_translate">
-        Dengan menyebut nama Allah Yang Maha Pemurah lagi Maha Penyayang.
+        {{ayat.text_indo}}
       </div>
     </ion-card-content>
     <ion-row>
@@ -44,58 +53,27 @@
     </ion-row>
   </ion-card>
 
-  <ion-card class="mushaf">
-    <ion-card-content>
-      <div class="ayat_number">2</div>
-      <div class="ayat_arabic" dir="rtl">
-        ﻿ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ
-      </div>
-      <div class="ayat_translate">
-        Segala puji bagi  Allah, Tuhan semesta alam.
-      </div>
-    </ion-card-content>
-    <ion-row>
-      <ion-col>
-        <ion-icon name="play"> Play</ion-icon>
-      </ion-col>
-      <ion-col>
-        <ion-icon name="bulb"> Memoz</ion-icon>
-      </ion-col>
-      <ion-col>
-        <ion-icon name="bookmarks"> Tafsir</ion-icon>
-      </ion-col>
-      <ion-col>
-        <ion-icon  name="share"> Share</ion-icon>
-      </ion-col>
-    </ion-row>
-  </ion-card>
-
-  <ion-card class="mushaf">
-    <ion-card-content>
-      <div class="ayat_number">3</div>
-      <div class="ayat_arabic" dir="rtl">
-        ﻿ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ
-      </div>
-      <div class="ayat_translate">
-        Maha Pemurah lagi Maha Penyayang.
-      </div>
-    </ion-card-content>
-    <ion-row>
-      <ion-col>
-        <ion-icon name="play"> Play</ion-icon>
-      </ion-col>
-      <ion-col>
-        <ion-icon name="bulb"> Memoz</ion-icon>
-      </ion-col>
-      <ion-col>
-        <ion-icon name="bookmarks"> Tafsir</ion-icon>
-      </ion-col>
-      <ion-col>
-        <ion-icon  name="share"> Share</ion-icon>
-      </ion-col>
-    </ion-row>
-  </ion-card>
-  
+  <ion-footer no-border>
+    <div class="player">
+        <button ion-button round>
+          <ion-icon name="md-play"></ion-icon>
+        </button>
+        <button ion-button round>
+          <ion-icon name="md-pause"></ion-icon>
+        </button>
+        <button ion-button round>
+          <ion-icon name="md-square"></ion-icon>
+        </button>
+    </div>
+</ion-footer>
+<div class="paging">
+    <button ion-button round  (click)="goToPage(prevPage)">
+      <ion-icon name="ios-arrow-dropleft"></ion-icon>
+    </button>
+    <button ion-button round  (click)="goToPage(nextPage)">
+      <ion-icon name="ios-arrow-dropright"></ion-icon>
+    </button>
+</div>
 
   <ion-fab right top  edge>
     <button ion-fab color="dark" mini><ion-icon name="add"></ion-icon></button>

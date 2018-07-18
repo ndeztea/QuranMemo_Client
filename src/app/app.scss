@@ -40,14 +40,18 @@ header button{
 	font-family: "me_quran";
 	font-size: 17pt;
 	padding-bottom: 14px;
+	line-height: 46px;
 }
 .mushaf .ayat_number{
-	content: "10 )";
     position: absolute;
     font-size: 20px;
     margin: -10px;
     color: #d8c69c;
     font-family: "arabic_syawal"
+}
+.mushaf .ayat_translate{
+	border-top: 1px dashed #8e856f;
+    padding-top: 10px;
 }
 .content-body{
 	background-color: #e8e4e0 !important;
@@ -56,13 +60,18 @@ header button{
 	padding: 5px;
 }
 .header-bg ion-avatar img {
-    height: 150px;
+    height: 100px;
     border-radius: 78px;
     text-align: center;
     border: 1px solid #65bcb4;
  }
 .header-bg ion-avatar{
-	padding-left: 23%;
+	padding-left: 33%;
+}
+.header-bg h2{
+	font-family: "arabic_onenight";
+	color: #FFFFFF;
+	font-size: 20pt;
 }
 .bar-button-primary-md, .bar-button-clear-md-primary, .bar-button-md-primary{
 	color:#FFF;
@@ -111,4 +120,19 @@ header.profile{
 }
 .label-md .icon {
 	padding-right: 10px;
+}
+
+.footer{
+	position: fixed;
+}
+.player{
+	background-color: #e8e4e0;
+	text-align: center;
+}
+.paging{
+	text-align: center;
+	margin-bottom: 50px;
+}
+.paging.no-margin{
+	margin-bottom: 0px;
 }
