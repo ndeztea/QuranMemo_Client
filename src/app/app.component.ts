@@ -51,7 +51,9 @@ export class MyApp {
     { title: 'Subscriptions', component: 'SubscriptionsPage', icon: 'cart' },
     { title: 'FAQ', component: 'FaqPage', icon: 'help'  },
     { title: 'Contact', component: 'ContactPage', icon:'mail' },
-    { title: 'Partners', component: 'PartnersPage', icon:'contact' }
+    { title: 'Partners', component: 'PartnersPage', icon:'contact' },
+    { title: 'Settings', component: 'QuranSettingsPage', icon:'cog' },
+    { title: 'How To', component: 'QuranInformationPage', icon:'information-circle' }
   ]
 
   params: Object;
