@@ -17,7 +17,33 @@
 
 </ion-header>
 
-
 <ion-content padding>
+  <ion-segment [(ngModel)]="search" ngSelected="selected">
+    <ion-segment-button value="surah">
+      Surah
+    </ion-segment-button>
+    <ion-segment-button value="juz">
+      Juz
+    </ion-segment-button>
+  </ion-segment>
 
+  <div [ngSwitch]="search">
+    <div *ngSwitchCase="'surah'">
+      Search
+    </div>
+
+  <div *ngSwitchCase="'juz'">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-4 col-sm *ngFor="let j of juz" (click)="goToJuz(j.number)">
+          {{j.number}} - {{j.number_arabic}}<br>
+          {{j.juz}}<br>
+          {{j.juz_latin}}
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</div>
+
+  
 </ion-content>
