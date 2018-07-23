@@ -69,7 +69,6 @@ export class QuranPage {
         this.juz = data.juz;
         this.currPage = data.curr_page;
       }
-      console.log(data);
       this.loading.dismiss();
     })
   }
@@ -85,7 +84,6 @@ export class QuranPage {
         this.juz = data.juz;
         this.currPage = data.curr_page;
       }
-      console.log(data);
       this.loading.dismiss();
     })
   }
