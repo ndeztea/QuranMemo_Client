@@ -9,7 +9,8 @@
   <ion-navbar>
     <ion-title>
       <div class="sub-title">Surah {{surah}}</div>
-      <small class="small-title">Juz {{juz}} | Page {{currPage}}</small>
+      <small class="small-title" *ngIf="juz>0">Juz {{juz}} | Page {{currPage}}</small>
+      <small class="small-title" *ngIf="range_ayat!=''">Ayat {{range_ayat}}</small>
       </ion-title>
     <ion-buttons left>
 	     <button ion-button icon-only menuToggle start>
@@ -37,33 +38,36 @@
       <ion-icon name="ios-arrow-dropright"></ion-icon>
     </button>
 </div>
-
-  <ion-card class="mushaf" *ngFor="let ayat of ayats">
-    <ion-card-content >
-      <div class="ayat_number">{{ayat.ayat}}</div>
-      <div class="ayat_arabic" dir="rtl">
-        ﻿{{ayat.text}}
-      </div>
-       <div class="ayat_translate">
-        {{ayat.text_indo}}
-      </div>
-    </ion-card-content>
-    <ion-row>
-      <ion-col>
-        <ion-icon name="play"> Play</ion-icon>
-      </ion-col>
-      <ion-col>
-        <ion-icon name="bulb"> Memoz</ion-icon>
-      </ion-col>
-      <ion-col>
-        <ion-icon name="bookmarks"> Tafsir</ion-icon>
-      </ion-col>
-      <ion-col>
-        <ion-icon  name="share"> Share</ion-icon>
-      </ion-col>
-    </ion-row>
-  </ion-card>
-
+  <div *ngFor="let ayat of ayats">
+    <ion-card class="mushaf bismillah"  *ngIf="ayat.ayat==1">
+      <ion-card-content><img src="assets/img/bismillah.png"/></ion-card-content>
+    </ion-card>
+    <ion-card class="mushaf">
+      <ion-card-content>
+        <div class="ayat_number">{{ayat.ayat}}</div>
+        <div class="ayat_arabic" dir="rtl">
+          ﻿{{ayat.text}}
+        </div>
+         <div class="ayat_translate">
+          {{ayat.text_indo}}
+        </div>
+      </ion-card-content>
+      <ion-row>
+        <ion-col>
+          <ion-icon name="play"> Play</ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-icon name="bulb"> Memoz</ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-icon name="bookmarks"> Tafsir</ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-icon  name="share"> Share</ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </div>
   <ion-footer no-border>
     <div class="player">
         <button ion-button round>

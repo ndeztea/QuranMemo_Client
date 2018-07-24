@@ -17,8 +17,11 @@
 
 </ion-header>
 
-<ion-content padding>
+<ion-content no-padding>
   <ion-segment [(ngModel)]="search" ngSelected="selected">
+    <ion-segment-button value="keyword">
+      Keyword
+    </ion-segment-button>
     <ion-segment-button value="surah">
       Surah
     </ion-segment-button>
@@ -29,7 +32,23 @@
 
   <div [ngSwitch]="search">
     <div *ngSwitchCase="'surah'">
-      Search
+      <form (ngSubmit)="submitForm()" [formGroup]="todo">
+        <ion-item>
+          <ion-label floating>Surah</ion-label>
+          <ion-select type="text" name="surah" formControlName="surah">
+            <ion-option *ngFor="let s of surah" value="{{s.id}}">{{s.id}}. {{s.surah}} ({{s.type}} {{s.ayat}} Ayah)</ion-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>Ayah Start</ion-label>
+          <ion-input  name="ayat_start" type="type" formControlName="ayat_start"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>Ayah End</ion-label>
+          <ion-input  name="ayat_end" type="type" formControlName="ayat_end"></ion-input>
+        </ion-item>
+        <button ion-button type="submit" block>Search</button>
+      </form>
     </div>
 
   <div *ngSwitchCase="'juz'">
@@ -42,6 +61,13 @@
         </ion-col>
       </ion-row>
     </ion-grid>
+  </div>
+
+  <div *ngSwitchCase="'keyword'">
+    <ion-searchbar
+      [showCancelButton]="shouldShowCancel"
+      (ionInput)="searchKeyword($event)">
+    </ion-searchbar>
   </div>
 </div>
 

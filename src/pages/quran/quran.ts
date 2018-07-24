@@ -20,24 +20,32 @@ export class QuranPage {
   loading : any;
   pagination: any;
   ayat : any;
-  currPage : Number;
-  nextPage : Number;
-  prevPage : Number;
+  currPage : number;
+  nextPage : number;
+  prevPage : number;
   surah : String;
-  juz : Number;
+  juz : number;
+  range_ayat: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl:ModalController, public popOverCtrl:PopoverController, public restApiService:RestapiServiceProvider, public loadingCtrl: LoadingController, viewCtrl: ViewController) {
     
     let page = this.navParams.get('page');
     let juz = this.navParams.get('juz');
+    let surah = this.navParams.get('surah');
+    let ayat_start = this.navParams.get('ayat_start');
+    let ayat_end = this.navParams.get('ayat_end');
+
     page = typeof page == 'undefined'?1:page;
     juz = typeof juz == 'undefined'?'undefined':juz;
+    surah = typeof surah == 'undefined'?'undefined':surah;
 
     console.log('in');
     this.loadingShow();
     // show juz page if juz is not empty
     if(juz!='undefined'){
       this.getJuz(juz);
+    }else if(surah!='undefined'){
+      this.getRangeAyat(surah,ayat_start+'-'+ayat_end);
     }else{
       this.getPages(page);
     }
@@ -72,6 +80,20 @@ export class QuranPage {
       this.loading.dismiss();
     })
   }
+
+  getRangeAyat(surah: number, ayat: string){
+    this.restApiService.getRangeAyat(surah, ayat)
+    .then((data:any)=>{
+      if (Object.keys(data).length > 0){
+        this.ayats = data.ayats;
+        this.surah = data.surah;
+        this.range_ayat = data.ayat;
+        console.log(data);
+      }
+      this.loading.dismiss();
+    })
+  }
+
 
   getJuz(juz: number){
     this.restApiService.getAyatJuz(juz)

@@ -10,7 +10,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class RestapiServiceProvider {
 	//apiURL: String = 'http://dev.quranmemo.com/public'
-	apiURL: String = 'http://localhost:8888/QuranMemo/public';
+	apiURL: string = 'http://localhost:8888/QuranMemo/public';
 	juz: any;
 
 	constructor(public http: HttpClient) {
@@ -40,6 +40,26 @@ export class RestapiServiceProvider {
 	getJuz(){
 		return new Promise(resolve => {
 		    this.http.get<any>('assets/data/juz.json').subscribe((data: any) => {
+		      resolve(data);
+		    }, err => {
+		      console.log(err);
+		    });
+		});
+	}
+
+	getSurah(){
+		return new Promise(resolve => {
+		    this.http.get<any>('assets/data/surah.json').subscribe((data: any) => {
+		      resolve(data);
+		    }, err => {
+		      console.log(err);
+		    });
+		});
+	}
+
+	getRangeAyat(surah: number, ayat: string){
+		return new Promise(resolve => {
+		    this.http.get<any>(this.apiURL+'/mushaf/surah/'+surah+'/'+ayat+'?restAPI=JSON').subscribe((data: any) => {
 		      resolve(data);
 		    }, err => {
 		      console.log(err);
