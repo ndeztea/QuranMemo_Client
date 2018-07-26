@@ -20,6 +20,8 @@ export class QuranSearchPage {
   juz: any;
   surah: any;
   todo: any;
+  result: any;
+  show_loading: boolean;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,public viewCtrl: ViewController,public restApiService:RestapiServiceProvider,public formBuilder: FormBuilder) {
     this.restApiService.getJuz()
@@ -56,6 +58,17 @@ export class QuranSearchPage {
 
   submitForm(){
     this.navCtrl.push('QuranPage',this.todo.value);
+  }
+
+  searchKeyword(key: string){
+    this.show_loading = true;
+    this.restApiService.getSearchByKeyword(key.target.value)
+    .then((data:any)=>{
+      this.search_result = data.search_result;
+      this.search_count = data.search_count;
+      console.log(data);
+      this.show_loading = false;
+    })
   }
 
   close() {

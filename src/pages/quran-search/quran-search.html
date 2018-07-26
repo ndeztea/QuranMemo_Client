@@ -66,8 +66,21 @@
   <div *ngSwitchCase="'keyword'">
     <ion-searchbar
       [showCancelButton]="shouldShowCancel"
-      (ionInput)="searchKeyword($event)">
+      (ionInput)="searchKeyword($event)" debounce="600">
     </ion-searchbar>
+    <ion-spinner name="bubbles" *ngIf="show_loading==true"></ion-spinner>
+    <ion-card *ngIf="search_count > 0">
+      <ion-card-content>
+        <strong>Total result : {{search_count}}</strong>
+      </ion-card-content>
+    </ion-card>
+    <ion-card *ngFor="let search of search_result">
+      <ion-card-content>
+        <p>{{ search.text_indo }}</p>
+        <small>QS. {{search.surah_name}} : {{search.ayat}}</small>
+      </ion-card-content>
+    </ion-card>
+
   </div>
 </div>
 

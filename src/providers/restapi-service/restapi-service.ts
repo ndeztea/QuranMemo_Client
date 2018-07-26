@@ -67,4 +67,14 @@ export class RestapiServiceProvider {
 		});
 	}
 
+	getSearchByKeyword(key: string){
+		return new Promise(resolve => {
+		    this.http.get<any>(this.apiURL+'/mushaf/searchKeyword?keyword='+key+'&restAPI=JSON').subscribe((data: any) => {
+		      resolve(data);
+		    }, err => {
+		      console.log(err);
+		    });
+		});
+	}
+
 }
