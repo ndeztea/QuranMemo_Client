@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams,ViewController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams,ViewController,ToastController } from 'ionic-angular';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { RestapiServiceProvider } from '../../providers/restapi-service/restapi-service';
 
@@ -20,10 +20,15 @@ export class QuranSearchPage {
   juz: any;
   surah: any;
   todo: any;
-  result: any;
+  search_result: Array<String> = [];
+  search_count: number;
+  search_count: number;
+  page: any;
   show_loading: boolean;
+  keyword: string;
+  page: number;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public viewCtrl: ViewController,public restApiService:RestapiServiceProvider,public formBuilder: FormBuilder) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public viewCtrl: ViewController,public restApiService:RestapiServiceProvider,public formBuilder: FormBuilder, public toastCtrl: ToastController) {
     this.restApiService.getJuz()
     .then((data:any)=>{
       this.juz = data;
@@ -60,15 +65,41 @@ export class QuranSearchPage {
     this.navCtrl.push('QuranPage',this.todo.value);
   }
 
-  searchKeyword(key: string){
-    this.show_loading = true;
-    this.restApiService.getSearchByKeyword(key.target.value)
-    .then((data:any)=>{
-      this.search_result = data.search_result;
-      this.search_count = data.search_count;
-      console.log(data);
-      this.show_loading = false;
-    })
+  cancelSearch(){
+    this.show_loading = false;
+    console.log('cancel');
+  }
+
+  searchKeyword(infinityScroll: any, page: number){
+    console.log(this.keyword)
+    if(this.keyword!=''){
+      this.show_loading = true;
+      this.restApiService.getSearchByKeyword(this.keyword,page)
+      .then((data:any)=>{
+          if(data.search_result==0){
+            let toast = this.toastCtrl.create({
+              message: "Search result is empty",
+              duration: 3000,
+              position: 'top'
+            });
+          toast.present();
+          this.show_loading = false;
+          return false;
+        }
+        for (var i = 0; i < data.search_result.length; i++) {
+          this.search_result.push( data.search_result[i] );
+        }
+        
+        this.search_count = data.search_count;
+        this.page = data.page;
+        this.show_loading = false;
+        if(infinityScroll!=''){
+          infinityScroll.complete();
+        }
+
+      })
+    }
+    
   }
 
   close() {

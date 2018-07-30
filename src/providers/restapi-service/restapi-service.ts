@@ -67,9 +67,13 @@ export class RestapiServiceProvider {
 		});
 	}
 
-	getSearchByKeyword(key: string){
+	getSearchByKeyword(key: string,page: number){
+		var pageParameter = '';
+		if(page!=''){
+			pageParameter = '&page='+page;
+		}
 		return new Promise(resolve => {
-		    this.http.get<any>(this.apiURL+'/mushaf/searchKeyword?keyword='+key+'&restAPI=JSON').subscribe((data: any) => {
+		    this.http.get<any>(this.apiURL+'/mushaf/searchKeyword?keyword='+key+pageParameter+'&restAPI=JSON').subscribe((data: any) => {
 		      resolve(data);
 		    }, err => {
 		      console.log(err);
