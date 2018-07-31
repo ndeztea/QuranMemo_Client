@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { IonicPage, NavController,ModalController,PopoverController } from 'ionic-angular';
+import { IonicPage, NavController,ModalController } from 'ionic-angular';
 
 
 

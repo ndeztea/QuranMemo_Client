@@ -82,12 +82,13 @@
         <small>QS. {{search.surah_name}} : {{search.ayat}}</small>
       </ion-card-content>
     </ion-card>
-  </div>
-  <ion-infinite-scroll (ionInfinite)="searchKeyword($event,page)">
+    <ion-infinite-scroll (ionInfinite)="searchKeyword($event,page)">
      <ion-infinite-scroll-content 
       loadingSpinner="bubbles"
       loadingText="Loading more data..."></ion-infinite-scroll-content>
    </ion-infinite-scroll>
+  </div>
+  
 </div>
 
   

@@ -26,6 +26,7 @@ export class QuranPage {
   surah : String;
   juz : number;
   range_ayat: string;
+  show_range_ayat: boolean;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl:ModalController, public popOverCtrl:PopoverController, public restApiService:RestapiServiceProvider, public loadingCtrl: LoadingController, viewCtrl: ViewController) {
     
@@ -56,8 +57,8 @@ export class QuranPage {
     console.log('ionViewDidLoad QuranPage');
   }
 
-  openModal(page){
-    let modal = this.modalCtrl.create(page); 
+  openModal(page, parameter:any){
+    let modal = this.modalCtrl.create(page,parameter); 
     modal.present()
   }
   
@@ -67,6 +68,7 @@ export class QuranPage {
   }
 
   getPages(page: number){
+    this.show_range_ayat = false;
     this.restApiService.getAyats(page)
     .then((data:any)=>{
       if (Object.keys(data).length > 0){
@@ -82,6 +84,7 @@ export class QuranPage {
   }
 
   getRangeAyat(surah: number, ayat: string){
+    this.show_range_ayat = true;
     this.restApiService.getRangeAyat(surah, ayat)
     .then((data:any)=>{
       if (Object.keys(data).length > 0){
