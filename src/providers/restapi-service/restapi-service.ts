@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { File } from '@ionic-native/file';
+
 
 /*
   Generated class for the RestapiServiceProvider provider.
@@ -9,72 +11,43 @@ import { Injectable } from '@angular/core';
 */
 @Injectable()
 export class RestapiServiceProvider {
-	apiURL: String = 'http://dev.quranmemo.com/public'
-	//apiURL: string = 'http://localhost:8888/QuranMemo/public';
+	//apiURL: String = 'http://dev.quranmemo.com/public'
+	apiURL: string = 'http://localhost:8888/QuranMemo/public';
 	juz: any;
+	file: any;
+	dataOri : string;
 
 	constructor(public http: HttpClient) {
+		this.file = new File();
 		console.log('Hello RestapiServiceProvider Provider');
 	}
 
 	getAyats(page: number){
-		return new Promise(resolve => {
-		    this.http.get<any>(this.apiURL+'/mushaf/page/'+page+'?restAPI=JSON').subscribe((data: any) => {
-		      resolve(data);
-		    }, err => {
-		      console.log(err);
-		    });
-		});
+		let data =  this.execRestAPI(this.apiURL+'/mushaf/page/'+page+'?restAPI=JSON');
+		let fileName = page+'.json';
+		// create file for cache
+		//this.file.writeFile('assets/data/',fileName,this.dataOri);
+		return data;
 	}
 
 	getAyatJuz(juz: number){
-		return new Promise(resolve => {
-		    this.http.get<any>(this.apiURL+'/mushaf/juz/'+juz+'?restAPI=JSON').subscribe((data: any) => {
-		      resolve(data);
-		    }, err => {
-		      console.log(err);
-		    });
-		});
+		return this.execRestAPI(this.apiURL+'/mushaf/juz/'+juz+'?restAPI=JSON');
 	}
 
 	getJuz(){
-		return new Promise(resolve => {
-		    this.http.get<any>('assets/data/juz.json').subscribe((data: any) => {
-		      resolve(data);
-		    }, err => {
-		      console.log(err);
-		    });
-		});
+		return this.execRestAPI('assets/data/juz.json');
 	}
 
 	getSurah(){
-		return new Promise(resolve => {
-		    this.http.get<any>('assets/data/surah.json').subscribe((data: any) => {
-		      resolve(data);
-		    }, err => {
-		      console.log(err);
-		    });
-		});
+		return this.execRestAPI('assets/data/surah.json');
 	}
 
 	getMuqodimah(surah){
-		return new Promise(resolve => {
-		    this.http.get<any>(this.apiURL+'/mushaf/muqodimah/'+surah+'?restAPI=JSON').subscribe((data: any) => {
-		      resolve(data);
-		    }, err => {
-		      console.log(err);
-		    });
-		});
+		return this.execRestAPI(this.apiURL+'/mushaf/muqodimah/'+surah+'?restAPI=JSON');
 	}
 
 	getRangeAyat(surah: number, ayat: string){
-		return new Promise(resolve => {
-		    this.http.get<any>(this.apiURL+'/mushaf/surah/'+surah+'/'+ayat+'?restAPI=JSON').subscribe((data: any) => {
-		      resolve(data);
-		    }, err => {
-		      console.log(err);
-		    });
-		});
+		return this.execRestAPI(this.apiURL+'/mushaf/surah/'+surah+'/'+ayat+'?restAPI=JSON');
 	}
 
 	getSearchByKeyword(key: string,page: number){
@@ -82,9 +55,14 @@ export class RestapiServiceProvider {
 		if(page>0){
 			pageParameter = '&page='+page;
 		}
+		return this.execRestAPI(this.apiURL+'/mushaf/searchKeyword?keyword='+key+pageParameter+'&restAPI=JSON'); 
+	}
+
+	execRestAPI(linkUrl: string){
 		return new Promise(resolve => {
-		    this.http.get<any>(this.apiURL+'/mushaf/searchKeyword?keyword='+key+pageParameter+'&restAPI=JSON').subscribe((data: any) => {
-		      resolve(data);
+		    this.http.get<any>(linkUrl).subscribe((data: any) => {
+		       this.dataOri = data;
+		       resolve(data);
 		    }, err => {
 		      console.log(err);
 		    });
