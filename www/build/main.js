@@ -1,6 +1,6 @@
-webpackJsonp([22],{
+webpackJsonp([23],{
 
-/***/ 118:
+/***/ 119:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,9 +8,9 @@ webpackJsonp([22],{
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__api_api__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mocks_providers_items__ = __webpack_require__(183);
 /* unused harmony reexport Items */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__settings_settings__ = __webpack_require__(309);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__settings_settings__ = __webpack_require__(310);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_2__settings_settings__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__user_user__ = __webpack_require__(310);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__user_user__ = __webpack_require__(311);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_3__user_user__["a"]; });
 
 
@@ -20,7 +20,7 @@ webpackJsonp([22],{
 
 /***/ }),
 
-/***/ 130:
+/***/ 131:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -33,7 +33,7 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 130;
+webpackEmptyAsyncContext.id = 131;
 
 /***/ }),
 
@@ -42,91 +42,95 @@ webpackEmptyAsyncContext.id = 130;
 
 var map = {
 	"../pages/contact/contact.module": [
-		331,
-		21
+		333,
+		22
 	],
 	"../pages/content/content.module": [
-		332,
-		20
+		334,
+		21
 	],
 	"../pages/dashboard/dashboard.module": [
-		333,
-		19
+		335,
+		20
 	],
 	"../pages/e-content/e-content.module": [
-		334,
-		18
+		336,
+		19
 	],
 	"../pages/faq/faq.module": [
-		335,
-		17
+		337,
+		18
 	],
 	"../pages/login/login.module": [
-		336,
-		16
+		338,
+		17
 	],
 	"../pages/memoz-list/memoz-list.module": [
-		337,
-		15
+		339,
+		16
 	],
 	"../pages/memoz-new/memoz-new.module": [
-		338,
-		14
+		340,
+		15
 	],
 	"../pages/menu/menu.module": [
 		341,
-		13
+		14
 	],
 	"../pages/notifications/notifications.module": [
-		339,
-		12
+		342,
+		13
 	],
 	"../pages/partners/partners.module": [
-		342,
-		11
+		343,
+		12
 	],
 	"../pages/quran-information/quran-information.module": [
-		340,
-		10
+		344,
+		11
 	],
 	"../pages/quran-juz/quran-juz.module": [
-		344,
+		345,
+		10
+	],
+	"../pages/quran-muqodimah/quran-muqodimah.module": [
+		346,
 		9
 	],
 	"../pages/quran-search/quran-search.module": [
-		343,
+		348,
 		8
 	],
 	"../pages/quran-setting/quran-setting.module": [
-		346,
+		347,
 		7
 	],
 	"../pages/quran/quran.module": [
-		345,
+		349,
 		6
 	],
 	"../pages/search/search.module": [
-		347,
+		350,
 		5
 	],
 	"../pages/signup/signup.module": [
-		349,
+		351,
 		4
 	],
 	"../pages/subscriptions/subscriptions.module": [
-		348,
+		352,
 		3
 	],
 	"../pages/tabs/tabs.module": [
-		351,
+		353,
 		2
 	],
 	"../pages/tutorial/tutorial.module": [
-		350,
+		354,
 		1
 	],
 	"../pages/welcome/welcome.module": [
-		352,
+		355,
 		0
 	]
 };
@@ -151,7 +155,7 @@ module.exports = webpackAsyncContext;
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Api; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(131);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -170,7 +174,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var Api = /** @class */ (function () {
     function Api(http) {
         this.http = http;
-        this.url = 'https://example.com/api/v1';
+        this.url = 'https://localhost:8888.com/QuranMemo';
     }
     Api.prototype.get = function (endpoint, params, reqOpts) {
         if (!reqOpts) {
@@ -216,7 +220,7 @@ var Api = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Items; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_item__ = __webpack_require__(308);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_item__ = __webpack_require__(309);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -338,9 +342,95 @@ var Tab3Root = 'LoginPage';
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RestapiServiceProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_file__ = __webpack_require__(313);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/*
+  Generated class for the RestapiServiceProvider provider.
+
+  See https://angular.io/guide/dependency-injection for more info on providers
+  and Angular DI.
+*/
+var RestapiServiceProvider = /** @class */ (function () {
+    function RestapiServiceProvider(http) {
+        this.http = http;
+        //apiURL: String = 'http://dev.quranmemo.com/public'
+        this.apiURL = 'http://localhost:8888/QuranMemo/public';
+        this.file = new __WEBPACK_IMPORTED_MODULE_2__ionic_native_file__["a" /* File */]();
+        console.log('Hello RestapiServiceProvider Provider');
+    }
+    RestapiServiceProvider.prototype.getAyats = function (page) {
+        var data = this.execRestAPI(this.apiURL + '/mushaf/page/' + page + '?restAPI=JSON');
+        var fileName = page + '.json';
+        // create file for cache
+        //this.file.writeFile('assets/data/',fileName,this.dataOri);
+        return data;
+    };
+    RestapiServiceProvider.prototype.getAyatJuz = function (juz) {
+        return this.execRestAPI(this.apiURL + '/mushaf/juz/' + juz + '?restAPI=JSON');
+    };
+    RestapiServiceProvider.prototype.getJuz = function () {
+        return this.execRestAPI('assets/data/juz.json');
+    };
+    RestapiServiceProvider.prototype.getSurah = function () {
+        return this.execRestAPI('assets/data/surah.json');
+    };
+    RestapiServiceProvider.prototype.getMuqodimah = function (surah) {
+        return this.execRestAPI(this.apiURL + '/mushaf/muqodimah/' + surah + '?restAPI=JSON');
+    };
+    RestapiServiceProvider.prototype.getRangeAyat = function (surah, ayat) {
+        return this.execRestAPI(this.apiURL + '/mushaf/surah/' + surah + '/' + ayat + '?restAPI=JSON');
+    };
+    RestapiServiceProvider.prototype.getSearchByKeyword = function (key, page) {
+        var pageParameter = '';
+        if (page > 0) {
+            pageParameter = '&page=' + page;
+        }
+        return this.execRestAPI(this.apiURL + '/mushaf/searchKeyword?keyword=' + key + pageParameter + '&restAPI=JSON');
+    };
+    RestapiServiceProvider.prototype.execRestAPI = function (linkUrl) {
+        var _this = this;
+        return new Promise(function (resolve) {
+            _this.http.get(linkUrl).subscribe(function (data) {
+                _this.dataOri = data;
+                resolve(data);
+            }, function (err) {
+                console.log(err);
+            });
+        });
+    };
+    RestapiServiceProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]) === "function" && _a || Object])
+    ], RestapiServiceProvider);
+    return RestapiServiceProvider;
+    var _a;
+}());
+
+//# sourceMappingURL=restapi-service.js.map
+
+/***/ }),
+
+/***/ 225:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(225);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(237);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(226);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(238);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -348,27 +438,28 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 237:
+/***/ 238:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export createTranslateLoader */
 /* unused harmony export provideSettings */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(131);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_camera__ = __webpack_require__(243);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_camera__ = __webpack_require__(244);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__ = __webpack_require__(133);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__ = __webpack_require__(134);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_storage__ = __webpack_require__(135);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__ = __webpack_require__(117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ngx_translate_http_loader__ = __webpack_require__(284);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ionic_angular__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ngx_translate_http_loader__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ionic_angular__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__mocks_providers_items__ = __webpack_require__(183);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__providers__ = __webpack_require__(118);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__app_component__ = __webpack_require__(329);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__angular_http__ = __webpack_require__(330);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__providers__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__app_component__ = __webpack_require__(331);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__angular_http__ = __webpack_require__(332);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_restapi_service_restapi_service__ = __webpack_require__(224);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -384,6 +475,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+//import { SQLite, SQLiteObject } from '@ionic-native/sqlite';
 
 
 
@@ -437,19 +530,20 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/memoz-list/memoz-list.module#MemozListPageModule', name: 'MemozListPage', segment: 'memoz-list', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/memoz-new/memoz-new.module#MemozNewPageModule', name: 'MemozNewPage', segment: 'memoz-new', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/notifications/notifications.module#NotificationsPageModule', name: 'NotificationsPage', segment: 'notifications', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/quran-information/quran-information.module#QuranInformationPageModule', name: 'QuranInformationPage', segment: 'quran-information', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/menu/menu.module#MenuPageModule', name: 'MenuPage', segment: 'menu', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/notifications/notifications.module#NotificationsPageModule', name: 'NotificationsPage', segment: 'notifications', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/partners/partners.module#PartnersPageModule', name: 'PartnersPage', segment: 'partners', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/quran-search/quran-search.module#QuranSearchPageModule', name: 'QuranSearchPage', segment: 'quran-search', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/quran-information/quran-information.module#QuranInformationPageModule', name: 'QuranInformationPage', segment: 'quran-information', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/quran-juz/quran-juz.module#QuranJuzPageModule', name: 'QuranJuzPage', segment: 'quran-juz', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/quran/quran.module#QuranPageModule', name: 'QuranPage', segment: 'quran', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/quran-muqodimah/quran-muqodimah.module#QuranMuqodimahPageModule', name: 'QuranMuqodimahPage', segment: 'quran-muqodimah', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/quran-setting/quran-setting.module#QuranSettingPageModule', name: 'QuranSettingPage', segment: 'quran-setting', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/quran-search/quran-search.module#QuranSearchPageModule', name: 'QuranSearchPage', segment: 'quran-search', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/quran/quran.module#QuranPageModule', name: 'QuranPage', segment: 'quran', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/search/search.module#SearchPageModule', name: 'SearchPage', segment: 'search', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/subscriptions/subscriptions.module#SubscriptionsPageModule', name: 'SubscriptionsPage', segment: 'subscriptions', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/tutorial/tutorial.module#TutorialPageModule', name: 'TutorialPage', segment: 'tutorial', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/subscriptions/subscriptions.module#SubscriptionsPageModule', name: 'SubscriptionsPage', segment: 'subscriptions', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/tabs/tabs.module#TabsPageModule', name: 'TabsPage', segment: 'tabs', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/tutorial/tutorial.module#TutorialPageModule', name: 'TutorialPage', segment: 'tutorial', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/welcome/welcome.module#WelcomePageModule', name: 'WelcomePage', segment: 'welcome', priority: 'low', defaultHistory: [] }
                     ]
                 }),
@@ -468,7 +562,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__["a" /* StatusBar */],
                 { provide: __WEBPACK_IMPORTED_MODULE_11__providers__["b" /* Settings */], useFactory: provideSettings, deps: [__WEBPACK_IMPORTED_MODULE_6__ionic_storage__["b" /* Storage */]] },
                 // Keep this to enable Ionic's runtime error handling during development
-                { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_9_ionic_angular__["c" /* IonicErrorHandler */] }
+                { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_9_ionic_angular__["c" /* IonicErrorHandler */] },
+                __WEBPACK_IMPORTED_MODULE_14__providers_restapi_service_restapi_service__["a" /* RestapiServiceProvider */]
             ]
         })
     ], AppModule);
@@ -479,7 +574,7 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 308:
+/***/ 309:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -508,7 +603,7 @@ var Item = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 309:
+/***/ 310:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -597,12 +692,12 @@ var Settings = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 310:
+/***/ 311:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return User; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(311);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(312);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(182);
@@ -700,7 +795,7 @@ var User = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 329:
+/***/ 331:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -708,10 +803,10 @@ var User = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__ = __webpack_require__(133);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(134);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages__ = __webpack_require__(223);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers__ = __webpack_require__(119);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -743,7 +838,9 @@ var MyApp = /** @class */ (function () {
             { title: 'Subscriptions', component: 'SubscriptionsPage', icon: 'cart' },
             { title: 'FAQ', component: 'FaqPage', icon: 'help' },
             { title: 'Contact', component: 'ContactPage', icon: 'mail' },
-            { title: 'Partners', component: 'PartnersPage', icon: 'contact' }
+            { title: 'Partners', component: 'PartnersPage', icon: 'contact' },
+            { title: 'Settings', component: 'QuranSettingsPage', icon: 'cog' },
+            { title: 'How To', component: 'QuranInformationPage', icon: 'information-circle' }
         ];
         platform.ready().then(function () {
             // Okay, so the platform is ready and our plugins are available.
@@ -784,23 +881,25 @@ var MyApp = /** @class */ (function () {
         // we wouldn't want the back button to show in this scenario
         this.nav.setRoot(page.component);
     };
+    MyApp.prototype.openNav = function (page) {
+        this.nav.push(page);
+    };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_4_ionic_angular__["h" /* Nav */]),
-        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["h" /* Nav */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["h" /* Nav */]) === "function" && _a || Object)
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_4_ionic_angular__["i" /* Nav */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["i" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            template: "<ion-menu [content]=\"content\" type=\"push\">\n    <!--ion-header>\n      <ion-toolbar>\n        <ion-title>Menu</ion-title>\n      </ion-toolbar>\n    </ion-header-->\n\n    <ion-content class=\"menu\">\n      <header class=\"profile\">\n        <div class=\"header-bg\">\n           <ion-avatar item-start>\n            <img src=\"assets/img/speakers/duck.jpg\">\n            </ion-avatar>\n          <button ion-button color=\"secondary\">Login</button>\n          <button ion-button color=\"danger\">Signup</button>\n        </div>\n      </header>\n      <ion-searchbar placeholder=\"Search Ayah\" animated=\"true\"></ion-searchbar>\n      <ion-list>\n        <button menuClose ion-item *ngFor=\"let p of pages\" (click)=\"openPage(p)\">\n          <ion-icon name=\"{{p.icon}}\"></ion-icon>\n          {{p.title}}\n        </button>\n      </ion-list>\n    </ion-content>\n\n  </ion-menu>\n  <ion-nav #content [root]=\"rootPage\"></ion-nav>"
+            template: "<ion-menu [content]=\"content\" type=\"push\">\n    <!--ion-header>\n      <ion-toolbar>\n        <ion-title>Menu</ion-title>\n      </ion-toolbar>\n    </ion-header-->\n\n    <ion-content class=\"menu\">\n      <header class=\"profile\">\n        <div class=\"header-bg\">\n           <ion-avatar item-start>\n            <img src=\"assets/img/speakers/duck.jpg\">\n            </ion-avatar>\n            <h2>Asep Koswara</h2>\n          <button ion-button  (click)=\"openNav('LoginPage')\" menuClose color=\"secondary\">Login</button>\n          <button ion-button (click)=\"openNav('SignupPage')\" menuClose color=\"danger\">Signup</button>\n        </div>\n      </header>\n      <ion-searchbar placeholder=\"Search Ayah\" animated=\"true\"></ion-searchbar>\n      <ion-list>\n        <button menuClose ion-item *ngFor=\"let p of pages\" (click)=\"openPage(p)\">\n          <ion-icon name=\"{{p.icon}}\"></ion-icon>\n          {{p.title}}\n        </button>\n      </ion-list>\n    </ion-content>\n\n  </ion-menu>\n  <ion-nav #content [root]=\"rootPage\"></ion-nav>"
         }),
-        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["k" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["k" /* Platform */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_6__providers__["b" /* Settings */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__providers__["b" /* Settings */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["a" /* Config */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["a" /* Config */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _g || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["l" /* Platform */], __WEBPACK_IMPORTED_MODULE_6__providers__["b" /* Settings */], __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["a" /* Config */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
     return MyApp;
-    var _a, _b, _c, _d, _e, _f, _g;
 }());
 
 //# sourceMappingURL=app.component.js.map
 
 /***/ })
 
-},[224]);
+},[225]);
 //# sourceMappingURL=main.js.map
