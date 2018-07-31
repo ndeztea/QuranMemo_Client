@@ -10,8 +10,8 @@
     <ion-title>
       <div class="sub-title">Surah {{surah}}</div>
       <small class="small-title" *ngIf="juz>0">Juz {{juz}} | Page {{currPage}}</small>
-      <small class="small-title" *ngIf="range_ayat!=''">Ayat {{range_ayat}}</small>
-      </ion-title>
+      <small class="small-title" *ngIf="show_range_ayat==true">Ayat {{range_ayat}}</small>
+    </ion-title>
     <ion-buttons left>
 	     <button ion-button icon-only menuToggle start>
 	        <ion-icon name="menu"></ion-icon>
@@ -39,6 +39,13 @@
     </button>
 </div>
   <div *ngFor="let ayat of ayats">
+    <ion-card class="mushaf header"  *ngIf="ayat.ayat==1">
+      <ion-card-content>
+        <strong>{{ayat.surah}}. {{ayat.surah_name}}</strong><br>
+        <small>{{ayat.type}} #{{ayat.order}} | {{ayat.count_ayat}}</small><br>
+        <button ion-button class="muqodimah" (click)="openModal('QuranMuqodimahPage',{surah:ayat.surah})">Muqodimah</button>
+      </ion-card-content>
+    </ion-card>
     <ion-card class="mushaf bismillah"  *ngIf="ayat.ayat==1">
       <ion-card-content><img src="assets/img/bismillah.png"/></ion-card-content>
     </ion-card>

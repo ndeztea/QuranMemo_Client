@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams,ViewController,ToastController } from 'ionic-angular';
-import { Validators, FormBuilder, FormGroup } from '@angular/forms';
+import { Validators, FormBuilder } from '@angular/forms';
 import { RestapiServiceProvider } from '../../providers/restapi-service/restapi-service';
 
 /**
@@ -22,8 +22,6 @@ export class QuranSearchPage {
   todo: any;
   search_result: Array<String> = [];
   search_count: number;
-  search_count: number;
-  page: any;
   show_loading: boolean;
   keyword: string;
   page: number;
