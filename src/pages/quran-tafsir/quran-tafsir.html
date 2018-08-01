@@ -1,5 +1,5 @@
 <!--
-  Generated template for the NewMemozPage page.
+  Generated template for the QuranTafsirPage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Muqodimah Surah {{surah}}</ion-title>
+    <ion-title>Tafsir {{tafsir_header}}</ion-title>
     <ion-buttons right>
 		<button  ion-button icon-only  (click)="close()">
 			<ion-icon name="close"></ion-icon>
@@ -19,5 +19,5 @@
 
 
 <ion-content padding>
-	<div  [innerHtml]="muqodimah"></div>
+	{{tafsir}}
 </ion-content>

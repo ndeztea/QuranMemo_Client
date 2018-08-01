@@ -67,7 +67,7 @@
           <ion-icon name="bulb"> Memoz</ion-icon>
         </ion-col>
         <ion-col>
-          <ion-icon name="bookmarks"> Tafsir</ion-icon>
+          <ion-icon name="bookmarks" (click)="openModal('QuranTafsirPage',{surah:ayat.surah, ayat:ayat.ayat})"> Tafsir</ion-icon>
         </ion-col>
         <ion-col>
           <ion-icon  name="share"> Share</ion-icon>

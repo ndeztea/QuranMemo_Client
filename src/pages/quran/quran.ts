@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ModalController,PopoverController,LoadingController, ViewController} from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController,PopoverController,LoadingController,ViewController} from 'ionic-angular';
 import { RestapiServiceProvider } from '../../providers/restapi-service/restapi-service';
 
 /**

@@ -11,8 +11,8 @@ import { File } from '@ionic-native/file';
 */
 @Injectable()
 export class RestapiServiceProvider {
-	//apiURL: String = 'http://dev.quranmemo.com/public'
-	apiURL: string = 'http://localhost:8888/QuranMemo/public';
+	apiURL: String = 'http://dev.quranmemo.com/public'
+	//apiURL: string = 'http://localhost:8888/QuranMemo/public';
 	juz: any;
 	file: any;
 	dataOri : string;
@@ -24,7 +24,7 @@ export class RestapiServiceProvider {
 
 	getAyats(page: number){
 		let data =  this.execRestAPI(this.apiURL+'/mushaf/page/'+page+'?restAPI=JSON');
-		let fileName = page+'.json';
+		//let fileName = page+'.json';
 		// create file for cache
 		//this.file.writeFile('assets/data/',fileName,this.dataOri);
 		return data;
@@ -44,6 +44,10 @@ export class RestapiServiceProvider {
 
 	getMuqodimah(surah){
 		return this.execRestAPI(this.apiURL+'/mushaf/muqodimah/'+surah+'?restAPI=JSON');
+	}
+
+	getTafsir(surah,ayat){
+		return this.execRestAPI(this.apiURL+'/mushaf/tafsir/'+surah+'/'+ayat+'?restAPI=JSON');
 	}
 
 	getRangeAyat(surah: number, ayat: string){
