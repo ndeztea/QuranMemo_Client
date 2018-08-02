@@ -125,7 +125,8 @@ export class QuranPage {
     let toast = this.toastCtrl.create({
         message: "Page "+page+" set as latest read.",
         duration: 3000,
-        position: 'top'
+        position: 'top',
+        showCloseButton: true
       });
     toast.present();
   }

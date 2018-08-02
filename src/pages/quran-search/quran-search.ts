@@ -78,7 +78,8 @@ export class QuranSearchPage {
             let toast = this.toastCtrl.create({
               message: "Search result is empty",
               duration: 3000,
-              position: 'top'
+              position: 'top',
+              showCloseButton: true
             });
           toast.present();
           this.show_loading = false;
