@@ -1,5 +1,6 @@
 import { Component,ViewChild } from '@angular/core';
 import { IonicPage,Nav, NavController,ModalController,PopoverController,ViewController } from 'ionic-angular';
+import { Storage } from '@ionic/storage';
 
 /**
  * Generated class for the DashboardPage page.
@@ -15,10 +16,14 @@ import { IonicPage,Nav, NavController,ModalController,PopoverController,ViewCont
 })
 export class DashboardPage {
   @ViewChild(Nav) nav: Nav;
-  constructor(public navCtrl: NavController, public modalCtrl: ModalController, public popOverCtrl: PopoverController,public viewCtrl: ViewController ) { }
+  bookmarkedPage: number;
+  constructor(public navCtrl: NavController, public modalCtrl: ModalController, public popOverCtrl: PopoverController,public viewCtrl: ViewController, public storage:Storage ) { }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DashboardPage');
+    this.storage.get('bookmarkPage').then((val) => {
+      this.bookmarkedPage = val;
+    });
   }
 
   memozNew(){
@@ -34,6 +39,13 @@ export class DashboardPage {
   notificationsPage(){
     let modal = this.modalCtrl.create('NotificationsPage'); 
     modal.present()
+  }
+
+  goToBookmarked(page){
+    this.navCtrl.push('QuranPage',
+      {
+        page: page
+      });
   }
 
   close() {

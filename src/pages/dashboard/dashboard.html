@@ -29,6 +29,7 @@
 	<div padding class="dashboard-menu">
 		<span><button ion-button (click)="memozNew()">New</button></span>
 		<span><button ion-button (click)="memozList()">LIst</button></span>
+		<span><button ion-button *ngIf="bookmarkedPage > 0" (click)="goToBookmarked(bookmarkedPage)">Latest Read</button></span>
 		<div>Stats</div>
 	</div>
 	<div class="dashboard-timeline">

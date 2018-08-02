@@ -11,8 +11,8 @@ import { File } from '@ionic-native/file';
 */
 @Injectable()
 export class RestapiServiceProvider {
-	apiURL: String = 'http://dev.quranmemo.com/public'
-	//apiURL: string = 'http://localhost:8888/QuranMemo/public';
+	//apiURL: String = 'http://dev.quranmemo.com/public'
+	apiURL: string = 'http://localhost:8888/QuranMemo/public';
 	juz: any;
 	file: any;
 	dataOri : string;

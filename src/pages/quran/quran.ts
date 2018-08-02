@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ModalController,PopoverController,LoadingController,ViewController} from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController,PopoverController,LoadingController,ViewController,ToastController} from 'ionic-angular';
 import { RestapiServiceProvider } from '../../providers/restapi-service/restapi-service';
+import { Storage } from '@ionic/storage';
 
 /**
  * Generated class for the QuranPage page.
@@ -28,7 +29,7 @@ export class QuranPage {
   range_ayat: string;
   show_range_ayat: boolean;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl:ModalController, public popOverCtrl:PopoverController, public restApiService:RestapiServiceProvider, public loadingCtrl: LoadingController, viewCtrl: ViewController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl:ModalController, public popOverCtrl:PopoverController, public restApiService:RestapiServiceProvider, public loadingCtrl: LoadingController, viewCtrl: ViewController,private storage: Storage, public toastCtrl: ToastController) {
     
     let page = this.navParams.get('page');
     let juz = this.navParams.get('juz');
@@ -50,7 +51,6 @@ export class QuranPage {
     }else{
       this.getPages(page);
     }
-    
   }
 
   ionViewDidLoad() {
@@ -118,6 +118,16 @@ export class QuranPage {
       {
         page: page
       });
+  }
+
+  setBookmark(page){
+    this.storage.set('bookmarkPage', page);
+    let toast = this.toastCtrl.create({
+        message: "Page "+page+" set as latest read.",
+        duration: 3000,
+        position: 'top'
+      });
+    toast.present();
   }
 
   

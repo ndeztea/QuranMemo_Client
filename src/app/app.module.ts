@@ -8,7 +8,7 @@ import { IonicStorageModule, Storage } from '@ionic/storage';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
-//import { SQLite, SQLiteObject } from '@ionic-native/sqlite';
+import { IonicStorageModule } from '@ionic/storage';
 
 
 import { Items } from '../mocks/providers/items';

@@ -18,6 +18,7 @@ import { RestapiServiceProvider } from '../../providers/restapi-service/restapi-
 export class QuranTafsirPage {
 	tafsir: string;
 	tafsir_header: string;
+	loading : any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public restApiService: RestapiServiceProvider, public loadingCtrl: LoadingController, public viewCtrl: ViewController) {
   	this.loadingShow();
