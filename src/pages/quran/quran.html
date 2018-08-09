@@ -17,7 +17,7 @@
 	        <ion-icon name="menu"></ion-icon>
 	     </button>
 	 </ion-buttons>
-   <ion-buttons right>
+   <ion-buttons right *ngIf="show_range_ayat!=true">
        <button ion-button icon-only (click)="openModal('QuranSearchPage')">
           <ion-icon name="search"></ion-icon>
        </button>
@@ -30,6 +30,18 @@
 
 
 <ion-content class="content-body">
+  <!--audio-track #audio *ngFor="let track of myTracks"  [track]="track" (onFinish)="onTrackFinished($event)">
+    <ion-item>  
+      <ion-thumbnail item-left>
+        <img src="{{audio.art}}">
+        <audio-track-play dark [audioTrack]="audio"><ion-spinner></ion-spinner></audio-track-play>  
+      </ion-thumbnail>
+      <div item-content style="width:100%">
+        <p><strong>{{audio.title}}</strong> ⚬ <em>{{audio.artist}}</em></p>
+        <audio-track-progress-bar dark duration progress [audioTrack]="audio" [ngStyle]="{visibility: audio.completed > 0 ? 'visible' : 'hidden'}"></audio-track-progress-bar>
+      </div>
+    </ion-item>    
+  </audio-track-->
   <div class="paging no-margin">
     <button ion-button round *ngIf="prevPage > 0" navPop>
       <ion-icon name="ios-arrow-dropleft"></ion-icon>

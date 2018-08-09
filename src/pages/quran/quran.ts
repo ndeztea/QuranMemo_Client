@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController,PopoverController,LoadingController,ViewController,ToastController} from 'ionic-angular';
 import { RestapiServiceProvider } from '../../providers/restapi-service/restapi-service';
 import { Storage } from '@ionic/storage';
+import { AudioProvider } from 'ionic-audio';
+
 
 /**
  * Generated class for the QuranPage page.
@@ -29,7 +31,11 @@ export class QuranPage {
   range_ayat: string;
   show_range_ayat: boolean;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl:ModalController, public popOverCtrl:PopoverController, public restApiService:RestapiServiceProvider, public loadingCtrl: LoadingController, viewCtrl: ViewController,private storage: Storage, public toastCtrl: ToastController) {
+  myTracks: any[];
+  allTracks: any[];
+  selectedTrack: any;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl:ModalController, public popOverCtrl:PopoverController, public restApiService:RestapiServiceProvider, public loadingCtrl: LoadingController, viewCtrl: ViewController,private storage: Storage, public toastCtrl: ToastController, private audio:AudioProvider) {
     
     let page = this.navParams.get('page');
     let juz = this.navParams.get('juz');
@@ -51,10 +57,26 @@ export class QuranPage {
     }else{
       this.getPages(page);
     }
+
+    this.myTracks = [{
+      src: 'https://archive.org/download/JM2013-10-05.flac16/V0/jm2013-10-05-t12-MP3-V0.mp3',
+      artist: 'John Mayer',
+      title: 'Why Georgia',
+      art: 'img/johnmayer.jpg',
+      preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
+    },
+    {
+      src: 'https://archive.org/download/JM2013-10-05.flac16/V0/jm2013-10-05-t30-MP3-V0.mp3',
+      artist: 'John Mayer',
+      title: 'Who Says',
+      art: 'img/johnmayer.jpg',
+      preload: 'metadata' // tell the plugin to preload metadata such as duration for this track,  set to 'none' to turn off
+    }];
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad QuranPage');
+    this.allTracks = this.audio.tracks; 
   }
 
   openModal(page, parameter:any){
@@ -144,4 +166,18 @@ export class QuranPage {
 
     this.loading.present();
   }
+
+  playSelectedTrack() {
+    // use AudioProvider to control selected track 
+    this.audio.play(this.selectedTrack);
+  }
+  
+  pauseSelectedTrack() {
+     // use AudioProvider to control selected track 
+     this.audio.pause(this.selectedTrack);
+  }
+         
+  onTrackFinished(track: any) {
+    console.log('Track finished', track)
+  } 
 }
