@@ -59,14 +59,14 @@ export class QuranPage {
     }
 
     this.myTracks = [{
-      src: 'https://archive.org/download/JM2013-10-05.flac16/V0/jm2013-10-05-t12-MP3-V0.mp3',
+      src: 'https://quranmemo.com/public/sound/Al_Afasy/001001.mp3',
       artist: 'John Mayer',
       title: 'Why Georgia',
       art: 'img/johnmayer.jpg',
       preload: 'metadata' // tell the plugin to preload metadata such as duration for this track, set to 'none' to turn off
     },
     {
-      src: 'https://archive.org/download/JM2013-10-05.flac16/V0/jm2013-10-05-t30-MP3-V0.mp3',
+      src: 'https://quranmemo.com/public/sound/Al_Afasy/001002.mp3',
       artist: 'John Mayer',
       title: 'Who Says',
       art: 'img/johnmayer.jpg',

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { QuranPage } from './quran';
-import { AudioProvider } from 'ionic-audio';
+import { IonicAudioModule, WebAudioProvider, CordovaMediaProvider, defaultAudioProviderFactory } from 'ionic-audio';
 
 @NgModule({
   declarations: [
@@ -9,6 +9,7 @@ import { AudioProvider } from 'ionic-audio';
   ],
   imports: [
     IonicPageModule.forChild(QuranPage),
+    IonicAudioModule.forRoot(defaultAudioProviderFactory),
   ]
 
 })

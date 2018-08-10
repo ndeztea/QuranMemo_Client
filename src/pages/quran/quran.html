@@ -30,7 +30,7 @@
 
 
 <ion-content class="content-body">
-  <!--audio-track #audio *ngFor="let track of myTracks"  [track]="track" (onFinish)="onTrackFinished($event)">
+  <audio-track #audio *ngFor="let track of myTracks"  [track]="track" (onFinish)="onTrackFinished($event)">
     <ion-item>  
       <ion-thumbnail item-left>
         <img src="{{audio.art}}">
@@ -41,7 +41,7 @@
         <audio-track-progress-bar dark duration progress [audioTrack]="audio" [ngStyle]="{visibility: audio.completed > 0 ? 'visible' : 'hidden'}"></audio-track-progress-bar>
       </div>
     </ion-item>    
-  </audio-track-->
+  </audio-track>
   <div class="paging no-margin">
     <button ion-button round *ngIf="prevPage > 0" navPop>
       <ion-icon name="ios-arrow-dropleft"></ion-icon>
