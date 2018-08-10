@@ -52,7 +52,7 @@ export class MyApp {
     { title: 'FAQ', component: 'FaqPage', icon: 'help'  },
     { title: 'Contact', component: 'ContactPage', icon:'mail' },
     { title: 'Partners', component: 'PartnersPage', icon:'contact' },
-    { title: 'Settings', component: 'QuranSettingsPage', icon:'cog' },
+    { title: 'Settings', component: 'ConfigPage', icon:'cog' },
     { title: 'How To', component: 'QuranInformationPage', icon:'information-circle' }
   ]
 
